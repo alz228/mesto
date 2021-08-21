@@ -1,0 +1,13 @@
+.profile__info-button {
+    background-image: url("../../../images/Edit Button.svg");
+    width: 24px;
+    height: 24px;
+    margin-top: 15px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+.profile__info-button:hover {
+    opacity: 0.6;
+}
