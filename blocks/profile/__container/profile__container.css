@@ -1,5 +1,6 @@
 .profile__container {
     display: flex;
+  
 }
 
 @media screen and (max-width: 950px) {
@@ -7,5 +8,14 @@
         margin: auto;
         justify-self: center;
         align-self: center;
+       
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .profile__container {
+       width: 220px;
+       flex-direction: column;
+       
     }
 }

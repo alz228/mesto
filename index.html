@@ -6,140 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Mesto">
     <title>Mesto</title>
-    <title>Russia</title>
-    <link rel="stylesheet" href="./vendor/normalize.css">
     <link rel="stylesheet" href="./pages/index.css">
-
-    <style>
-
-    </style>
 </head>
 
 <body class="page">
-
-
-
     <header class="header">
         <img class="header__logo" src="./images/logo.svg" alt="Лого">
         <!-- <img class ="header__line" src="./images/Line.png" alt="Линия"> -->
 
     </header>
-    <main class="mainclass">
 
+    <main class="mainclass">
         <section class="profile">
             <div class="profile__container">
                 <img class="profile__avatar" src="./images/avatar.jpg" alt="Аватар">
 
                 <div class="profile__info">
-                    <h1 class=profile__name>Жак-Ив Кусто</h1>
-                    <p class=profile__description>Исследователь океана</p>
-
-
-
+                    <div class="profile__name-container">
+                        <h1 class="profile__name">Жак-Ив Кусто</h1>
+                        <button class="profile__info-button" type="button"></button>
+                    </div>
+                    <p class="profile__description">Исследователь океана</p>
                 </div>
-                <button class="profile__info-button"></button>
             </div>
-
-
-            <button class="profile__add-button"></button>
+            <button class="profile__add-button" type="button"></button>
         </section>
 
         <section class="elements">
             <div class="element">
                 <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
                 <div class="element__container">
-                    <p class="element__title">Карачаевск</p>
-                    <button class="element__like"></button>
+                    <h2 class="element__title">Карачаевск</h2>
+                    <button class="element__like" type="button"></button>
                 </div>
-
-
-
             </div>
             <div class="element">
                 <img class="element__image" src="./images/elbrus.jpg" alt="Карачаевск">
                 <div class="element__container">
-                    <p class="element__title">Гора Эльбрус</p>
-                    <button class="element__like"></button>
+                    <h2 class="element__title">Гора Эльбрус</h2>
+                    <button class="element__like" type="button"></button>
                 </div>
-
-
             </div>
             <div class="element">
                 <img class="element__image" src="./images/dombay.jpg" alt="Карачаевск">
                 <div class="element__container">
-                    <p class="element__title">Домбай</p>
-                    <button class="element__like"></button>
+                    <h2 class="element__title">Домбай</h2>
+                    <button class="element__like" type="button"></button>
                 </div>
-
-
             </div>
-
+            <div class="element">
+                <img class="element__image" src="./images/elbrus.jpg" alt="Карачаевск">
+                <div class="element__container">
+                    <h2 class="element__title">Гора Эльбрус</h2>
+                    <button class="element__like" type="button"></button>
+                </div>
+            </div>
+            <div class="element">
+                <img class="element__image" src="./images/dombay.jpg" alt="Карачаевск">
+                <div class="element__container">
+                    <h2 class="element__title">Домбай</h2>
+                    <button class="element__like" type="button"></button>
+                </div>
+            </div>
             <div class="element">
                 <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
                 <div class="element__container">
-                    <p class="element__title">Карачаевск</p>
-                    <button class="element__like"></button>
+                    <h2 class="element__title">Карачаево-Черкессия</h2>
+                    <button class="element__like" type="button"></button>
                 </div>
-
-
-            </div>
-            <div class="element">
-                <img class="element__image" src="./images/elbrus.jpg" alt="Карачаевск">
-                <div class="element__container">
-                    <p class="element__title">Гора Эльбрус</p>
-                    <button class="element__like"></button>
-                </div>
-
-
-            </div>
-            <div class="element">
-                <img class="element__image" src="./images/dombay.jpg" alt="Карачаевск">
-                <div class="element__container">
-                    <p class="element__title">Домбай</p>
-                    <button class="element__like"></button>
-                </div>
-
-
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p class="footer__copyrighting"> &#169 2021 MESTO Russia</p>
+        <p class="footer__copyrighting"> &#169; 2021 MESTO Russia</p>
     </footer>
 
-
-
-    <div class="popup popup__hide">
-        
-        <div class="form__body">
-            <button class="popup__close"></button>
-            <form class="form">
-                <h1 class="form__title">Редактировать профиль</h1>
-
-                <fieldset class=form__container>
-
-                    <input type="text" placeholder="имя" class="form__input form__name">
-
-                    <input type="text" placeholder="описание" class="form__input form__description">
+    <div class="popup popup_hide">
+        <div class="popup__container">
+            <button class="popup__close" type="button"></button>
+            <form class="edit-form">
+                <h2 class="edit-form__title">Редактировать профиль</h2>
+                <fieldset class="edit-form__container">
+                    <input type="text" placeholder="имя" class="edit-form__input edit-form__input_name">
+                    <input type="text" placeholder="описание" class="edit-form__input edit-form__input_description">
                 </fieldset>
-
-
-                <button type="submit" class="form__button-save">Сохранить</button>
+                <button type="submit" class="edit-form__button-save">Сохранить</button>
             </form>
         </div>
     </div>
 
-    <div class="add__element">
-        <form>
-
-
-        </form>
-
-    </div>
-
-
     <script src="./script.js"></script>
-</body>
 
+</body>
 </html>

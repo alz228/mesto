@@ -3,11 +3,22 @@
     width: 24px;
     height: 24px;
     margin-top: 15px;
+    margin-left: 18px;
     border: none;
     background-color: black;
     cursor: pointer;
+    align-self: flex-end;
 }
 
 .profile__info-button:hover {
     opacity: 0.6;
+}
+
+@media screen and (max-width: 320px) {
+
+    .profile__info-button {
+        width: 18px;
+        height: 18px;
+        margin-left: 10px;
+    }
 }
