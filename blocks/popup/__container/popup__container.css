@@ -7,3 +7,10 @@
     border-radius: 10px;
     width: 430px;
 }
+
+@media screen and (max-width: 320px) {
+    .popup__container {
+        flex-direction: column;
+        width: 282px;
+    }
+}

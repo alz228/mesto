@@ -6,10 +6,25 @@
     cursor: pointer;
     font-family: 'Inter', Arial, sans-serif;
     border: none;
-    margin: 48px auto 37px;
+    margin: 48px 36px 37px;
     border-radius: 2px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
 }
 
 .form__button-save:hover {
     opacity: 80%;
+}
+
+@media screen and (max-width:320px) {
+    .edit-form__button-save {
+        font-size: 14px;
+        line-height: 17px;
+        width: 238px;
+        margin: 45px 22px 25px;
+    }
 }

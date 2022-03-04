@@ -14,3 +14,10 @@
 .edit-form__input:first-child {
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 320px) {
+    .edit-form__input {
+        max-width: 238px;
+        margin-left: 22px;
+    }
+}

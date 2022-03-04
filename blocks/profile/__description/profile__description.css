@@ -6,14 +6,17 @@
     color: #FFFFFF;
     margin: 16px 0 0;
     font-family: 'Inter', Arial, sans-serif;
-   
+    text-overflow: ellipsis;
+    max-width: 336px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-@media screen and (max-width: 320px){
-
-    .profile__description{
+@media screen and (max-width: 320px) {
+    .profile__description {
         font-size: 14px;
         line-height: 17px;
         margin-top: 14px;
+        max-width: 217px;
     }
 }
