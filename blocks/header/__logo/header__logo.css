@@ -3,12 +3,10 @@
     justify-self: flex-start;
     width: 142px;
     height: 33px;
-    padding-bottom: 41px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
     .header__logo {
-        padding-bottom: 41px;
         width: 103.74px;
         height: 24.4px;
         margin-left: 27px;

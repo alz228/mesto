@@ -12,11 +12,12 @@
     white-space: nowrap;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
     .profile__description {
         font-size: 14px;
         line-height: 17px;
-        margin-top: 14px;
-        max-width: 217px;
+        margin-top: 6px;
+        max-width: 282px;
+        text-align: center;
     }
 }

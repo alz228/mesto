@@ -12,10 +12,11 @@
   white-space: nowrap;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .profile__name {
     font-size: 27px;
     line-height: 33px;
     max-width: 189px;
+    margin-left: 30px;
   }
 }

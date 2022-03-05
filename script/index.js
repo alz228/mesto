@@ -7,10 +7,10 @@ let closeButton = document.querySelector('.popup__close');
 let name = document.querySelector('.edit-form__input_name');
 let description = document.querySelector('.edit-form__input_description');
 
-function popupOpen(){
-popupMain.classList.remove('popup_hide')
- name.value = profileName.textContent;
-description.value = profileDescription.textContent;
+function popupOpen() {
+   popupMain.classList.remove('popup_hide')
+   name.value = profileName.textContent;
+   description.value = profileDescription.textContent;
 }
 
 function popupClose() {
