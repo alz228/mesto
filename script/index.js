@@ -4,8 +4,8 @@ let formSubmit = document.querySelector('.edit-form');
 let profileInfoButton = document.querySelector('.profile__info-button');
 let popupMain = document.querySelector('.popup');
 let closeButton = document.querySelector('.popup__close');
-let name = document.querySelector('.edit-form__input_name');
-let description = document.querySelector('.edit-form__input_description');
+let name = document.querySelector('.edit-form__input_textvalue_name');
+let description = document.querySelector('.edit-form__input_textvalue_description');
 
 function popupOpen() {
    popupMain.classList.remove('popup_hide')
