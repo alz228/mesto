@@ -31,48 +31,7 @@
         </section>
 
         <section class="elements">
-            <div class="element">
-                <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-                <div class="element__container">
-                    <h2 class="element__title">Карачаевск</h2>
-                    <button class="element__like" type="button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__image" src="./images/elbrus.jpg" alt="Карачаевск">
-                <div class="element__container">
-                    <h2 class="element__title">Гора Эльбрус</h2>
-                    <button class="element__like" type="button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__image" src="./images/dombay.jpg" alt="Карачаевск">
-                <div class="element__container">
-                    <h2 class="element__title">Домбай</h2>
-                    <button class="element__like" type="button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__image" src="./images/elbrus.jpg" alt="Карачаевск">
-                <div class="element__container">
-                    <h2 class="element__title">Гора Эльбрус</h2>
-                    <button class="element__like" type="button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__image" src="./images/dombay.jpg" alt="Карачаевск">
-                <div class="element__container">
-                    <h2 class="element__title">Домбай</h2>
-                    <button class="element__like" type="button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-                <div class="element__container">
-                    <h2 class="element__title">Карачаево-Черкессия</h2>
-                    <button class="element__like" type="button"></button>
-                </div>
-            </div>
+
         </section>
     </main>
 
@@ -80,21 +39,64 @@
         <p class="footer__copyrighting"> &#169; 2021 MESTO Russia</p>
     </footer>
 
-    <div class="popup popup_hide">
+    <div class="popup popup_theme_profile popup_hide">
         <div class="popup__container">
-            <button class="popup__close" type="button"></button>
+            <button class="popup__close popup__close_theme_edit-form" type="button"></button>
             <form class="edit-form" name="edit-form-value">
                 <h2 class="edit-form__title">Редактировать профиль</h2>
                 <fieldset class="edit-form__container">
                     <input type="text" placeholder="имя" class="edit-form__input edit-form__input_textvalue_name"
                         name="name-value">
-                    <input type="text" placeholder="описание" class="edit-form__input edit-form__input_textvalue_description"
-                        name="description-value">
+                    <input type="text" placeholder="описание"
+                        class="edit-form__input edit-form__input_textvalue_description" name="description-value">
                 </fieldset>
-                <button type="submit" class="edit-form__button-save">Сохранить</button>
+                <button type="submit"
+                    class="edit-form__button-save edit-form__button-save_theme_save">Сохранить</button>
             </form>
         </div>
     </div>
+
+    <div class="popup popup_theme_add popup_hide">
+        <div class="popup__container">
+            <button class="popup__close popup__close_theme_add-card" type="button"></button>
+            <form class="edit-form" name="edit-form-value">
+                <h2 class="edit-form__title">Новое место</h2>
+                <fieldset class="edit-form__container">
+                    <input type="text" placeholder="название" class="edit-form__input edit-form__input_textvalue_place"
+                        name="place-value">
+                    <input type="text" placeholder="ссылка на картинку"
+                        class="edit-form__input edit-form__input_textvalue_image" name="image-value">
+                </fieldset>
+                <button type="submit" class="edit-form__button-save edit-form__button-save_theme_add">Создать</button>
+            </form>
+        </div>
+    </div>
+
+    <template id="element-popup">
+        <div class="popup-element">
+            <div class="popup-element__container">
+                <button class="popup__close popup__close_theme_element" type="button"></button>
+                <div class="image-container">
+                    <img class="popup-element__image" src="" alt="big photo">
+                    <p class="popup-element__title"></p>
+                </div>
+
+            </div>
+        </div>
+    </template>
+
+    <template id="create-element">
+        <div class="create-element element">
+            <button class="element__delete" type="button"></button>
+            <button href="#" class="element__button">
+                <img class="element__image" src="" alt="photo">
+            </button>
+            <div class="element__container">
+                <h2 class="element__title"></h2>
+                <button class="element__like" type="button"></button>
+            </div>
+        </div>
+    </template>
 
     <script src="./script/index.js"></script>
 
